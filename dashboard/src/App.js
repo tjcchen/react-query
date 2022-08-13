@@ -4,12 +4,17 @@
  * - Create a queryClient using new QueryClient
  * - Pass queryClient as a value to client in the QueryClientProvider
  */
-import './App.css';
+import { QueryClientProvider, QueryClient } from "react-query";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
+  const queryClient = new QueryClient();
+
   return (
     <>
-      <p>React Dashboard Application</p>
+      <QueryClientProvider client={queryClient}>
+        <Dashboard />
+      </QueryClientProvider>
     </>
   );
-};
+}
