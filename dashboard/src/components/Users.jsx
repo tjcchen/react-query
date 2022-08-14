@@ -1,3 +1,6 @@
+/**
+ * A group of user list
+ */
 import React from "react";
 import useUsers from "../query-hooks/useUsers";
 
