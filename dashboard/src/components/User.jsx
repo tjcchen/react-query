@@ -14,7 +14,7 @@ export default function User({ selectedUser }) {
 
       {user.isSuccess && (
         <>
-          <p>{`${user?.data?.name} - ${user?.data?.address?.street}`}</p>
+          <p>{`${user?.data?.name}`}</p>
         </>
       )}
     </>
