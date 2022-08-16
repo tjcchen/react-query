@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useIsFetching } from "react-query";
 import User from "../components/User";
 import Users from "../components/Users";
